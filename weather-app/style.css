@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,200&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  min-height: 100vh;
+  background-color: #b8c6db;
+  background-image: linear-gradient(315deg, #b8c6db 0%, #f5f7fa 74%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.weather-app {
+  width: 500px;
+}
+.weather-container1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1rem;
+  color: rgb(238, 238, 238);
+  font-family: inherit;
+  z-index: 1;
+  width: 100%;
+  height: 450px;
+  position: relative;
+}
+.weather-container1::before {
+  width: 100%;
+  height: 450px;
+  position: absolute;
+  background-size: contain;
+  content: "";
+  background-size: cover;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  background: url("https://cdn.pixabay.com/photo/2019/09/20/21/59/london-4492660_960_720.jpg");
+  opacity: 0.8;
+
+  z-index: -1;
+}
+
+.weather-container1 .weather-location {
+  display: flex;
+  justify-content: space-between;
+}
+
+.weather-container1 .weather-today {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.weather-container1 .weather-today .weahter-temp {
+  font-size: 5rem;
+  font-weight: 700;
+}
+
+.weather-container1 .weather-today .weather-conditions {
+  font-size: 2rem;
+}
+
+.weather-container1 .index-circle {
+  display: flex;
+  justify-content: center;
+}
+
+.hidden {
+  display: none;
+}
+
+.weather-container2 {
+  background-color: white;
+  font-family: inherit;
+  padding: 2rem 5rem;
+}
+.weather-container2 .weather-days {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.weather-container2 .weather-days .weather-day {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+.weather-container3 {
+  background-color: rgb(143, 140, 140);
+  height: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 1.2rem;
+}
